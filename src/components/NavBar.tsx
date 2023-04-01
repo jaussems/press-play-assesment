@@ -13,7 +13,7 @@ const NavBar: React.FC<any> = (props: PropsWithChildren) => {
           <li>Community</li>
         </ul>
       </nav>
-      <div className={styles.testing}>testing</div>
+      {/* <div className={styles.testing}>testing</div> */}
       <nav className={styles.mobile}>
         <ul>
           <li>Thema's</li>

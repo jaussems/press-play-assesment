@@ -7,32 +7,25 @@
   height: 5rem;
 
   .desktop {
-    background: purple;
-    display: block;
+    ul {
+      display: flex;
+      flex-direction: row;
+    }
   }
 
   .mobile {
-    background-color: orange;
+    //background-color: orange;
+    background: $base-green-color;
     display: none;
-  }
-  .testing {
-    background-color: pink;
   }
 
   @include responsive(540px) {
-    // .mobile {
-    //   display: block;
-    // }
-    // .desktop {
-    //   display: none;
-    // }
-
-    .testing {
-      background-color: rgb(51, 6, 250);
-    }
-
     .mobile {
       display: block;
+
+      ul {
+        @include flex-column;
+      }
     }
 
     .desktop {
