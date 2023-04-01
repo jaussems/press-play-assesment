@@ -13,6 +13,14 @@
     }
   }
 
+  .toggle {
+    display: none;
+
+    button {
+      background-color: yellow;
+    }
+  }
+
   .mobile {
     //background-color: orange;
     background: $base-green-color;
@@ -21,7 +29,8 @@
 
   @include responsive(540px) {
     .mobile {
-      display: block;
+      // display: block;
+      display: none;
 
       ul {
         @include flex-column;
@@ -30,6 +39,15 @@
 
     .desktop {
       display: none;
+    }
+
+    .toggle {
+      display: block;
+
+      button {
+        color: black;
+        align-items: center;
+      }
     }
   }
 }
