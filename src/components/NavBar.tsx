@@ -4,7 +4,7 @@ import styles from "../styles/NavBar.module.scss";
 const NavBar: React.FC<any> = (props: PropsWithChildren) => {
   return (
     <div className={styles.navbar}>
-      <nav className={styles.navbar__desktop}>
+      <nav className={styles.desktop}>
         <ul>
           <li>Thema's</li>
           <li>WERKplaats</li>
@@ -13,7 +13,8 @@ const NavBar: React.FC<any> = (props: PropsWithChildren) => {
           <li>Community</li>
         </ul>
       </nav>
-      <nav className={styles.navbar__mobile}>
+      <div className={styles.testing}>testing</div>
+      <nav className={styles.mobile}>
         <ul>
           <li>Thema's</li>
           <li>WERKplaats</li>

@@ -5,14 +5,38 @@
   width: 100%;
   background: $base-green-color;
   height: 5rem;
-  &__desktop {
+
+  .desktop {
     background: purple;
+    display: block;
   }
 
-  &__mobile {
-    background: red;
+  .mobile {
+    background-color: orange;
+    display: none;
   }
-  @include responsive(xs) {
-    @include flex-column;
+  .testing {
+    background-color: pink;
+  }
+
+  @include responsive(540px) {
+    // .mobile {
+    //   display: block;
+    // }
+    // .desktop {
+    //   display: none;
+    // }
+
+    .testing {
+      background-color: rgb(51, 6, 250);
+    }
+
+    .mobile {
+      display: block;
+    }
+
+    .desktop {
+      display: none;
+    }
   }
 }
