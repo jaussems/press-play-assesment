@@ -3,9 +3,15 @@
 
 .navbar {
   width: 100%;
-  background: green;
+  background: $base-green-color;
   height: 5rem;
+  &__desktop {
+    background: purple;
+  }
 
+  &__mobile {
+    background: red;
+  }
   @include responsive(xs) {
     @include flex-column;
   }
