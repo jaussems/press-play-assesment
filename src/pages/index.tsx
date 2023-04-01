@@ -3,6 +3,7 @@ import Image from "next/image";
 
 import styles from "@/styles/Home.module.scss";
 import NavBar from "@/components/NavBar";
+import Article from "@/components/Article";
 
 export default function Home() {
   return (
@@ -18,10 +19,10 @@ export default function Home() {
         <div>Intro Search </div>
         <div>News</div>
         <div>Cards</div>
-        <div>Article component</div>
+        <Article></Article>
         <div>Themes</div>
         <div>Materials</div>
-        <div>Article component</div>
+        <Article></Article>
         <div>Footer component</div>
       </main>
     </>
