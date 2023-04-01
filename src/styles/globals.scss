@@ -1,4 +1,6 @@
-@import "root.scss";
+@use "root.scss";
+@use "variables.scss";
+@use "mixins.scss";
 
 html,
 body {

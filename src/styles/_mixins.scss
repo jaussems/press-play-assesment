@@ -1,0 +1,5 @@
+@mixin responsive($value) {
+  @media (min-width: $value) {
+    @content;
+  }
+}
