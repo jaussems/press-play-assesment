@@ -15,6 +15,14 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <NavBar></NavBar>
+        <div>Intro Search </div>
+        <div>News</div>
+        <div>Cards</div>
+        <div>Article component</div>
+        <div>Themes</div>
+        <div>Materials</div>
+        <div>Article component</div>
+        <div>Footer component</div>
       </main>
     </>
   );
