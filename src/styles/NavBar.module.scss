@@ -1,0 +1,12 @@
+@import "mixins.scss";
+@import "variables.scss";
+
+.navbar {
+  width: 100%;
+  background: green;
+  height: 5rem;
+
+  @include responsive(xs) {
+    @include flex-column;
+  }
+}
