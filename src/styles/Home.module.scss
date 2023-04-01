@@ -4,3 +4,8 @@
 .main {
   @include responsive($lg);
 }
+
+.card_section {
+  display: flex;
+  justify-content: space-evenly;
+}

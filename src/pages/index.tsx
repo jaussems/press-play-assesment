@@ -4,6 +4,7 @@ import Image from "next/image";
 import styles from "@/styles/Home.module.scss";
 import NavBar from "@/components/NavBar";
 import Article from "@/components/Article";
+import Card from "@/components/Card";
 
 export default function Home() {
   return (
@@ -18,7 +19,11 @@ export default function Home() {
         <NavBar></NavBar>
         <div>Intro Search </div>
         <div>News</div>
-        <div>Cards</div>
+        <div className={styles.card_section}>
+          <Card></Card>
+          <Card></Card>
+          <Card></Card>
+        </div>
         <Article></Article>
         <div>Themes</div>
         <div>Materials</div>
