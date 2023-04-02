@@ -1,10 +1,14 @@
-import { PropsWithChildren } from "react";
+import { PropsWithChildren, useState } from "react";
 import styles from "../styles/NavBar.module.scss";
+import { clsx } from "clsx";
+import Image from "next/image";
 
 const NavBar: React.FC<any> = (props: PropsWithChildren) => {
-  let shownMenu = false;
+  let shownMenu: boolean = true;
+  const [toggle, setToggle] = useState(false);
   function MenuToggle() {
-    shownMenu = !shownMenu;
+    console.log("clicked", shownMenu);
+    setToggle(!toggle);
   }
 
   return (
@@ -18,19 +22,32 @@ const NavBar: React.FC<any> = (props: PropsWithChildren) => {
           <li>Community</li>
         </ul>
       </nav>
-      {/* <div className={styles.testing}>testing</div> */}
-      <nav className={styles.mobile}>
-        <ul>
-          <li>Thema's</li>
-          <li>WERKplaats</li>
-          <li>Nieuws</li>
-          <li>Materialen</li>
-          <li>Community</li>
-        </ul>
-      </nav>
-      <a className={styles.toggle}>
-        <button onClick={MenuToggle}>Menu</button>
-      </a>
+
+      <div
+        className={clsx({
+          [styles.show]: toggle,
+          [styles.hide]: !toggle,
+        })}
+      >
+        <nav>
+          <ul>
+            <li>Thema's</li>
+            <li>WERKplaats</li>
+            <li>Nieuws</li>
+            <li>Materialen</li>
+            <li>Community</li>
+          </ul>
+        </nav>
+      </div>
+      <Image
+        src={require("../assets/images/Group 15163.svg")}
+        alt={"Logo hoge school"}
+      />
+      <div className={styles.menubtn} onClick={MenuToggle}>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
     </div>
   );
 };
