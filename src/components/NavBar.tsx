@@ -15,11 +15,27 @@ const NavBar: React.FC<any> = (props: PropsWithChildren) => {
     <div className={styles.navbar}>
       <nav className={styles.desktop}>
         <ul>
+          <li className={styles.logo}>
+            <Image
+              src={require("../assets/images/Group 15163.svg")}
+              alt={"Logo hoge school"}
+            />
+          </li>
           <li>Thema's</li>
           <li>WERKplaats</li>
           <li>Nieuws</li>
           <li>Materialen</li>
           <li>Community</li>
+          <li>
+            <div className={styles.search_and_login}>
+              <Image
+                src={require("../assets/icons/search_icon.svg")}
+                alt={"Search icon"}
+                className={styles.search_icon}
+              />
+              <button className={styles.loginbutton}>Aanmelden</button>
+            </div>
+          </li>
         </ul>
       </nav>
 
@@ -39,14 +55,18 @@ const NavBar: React.FC<any> = (props: PropsWithChildren) => {
           </ul>
         </nav>
       </div>
-      <Image
-        src={require("../assets/images/Group 15163.svg")}
-        alt={"Logo hoge school"}
-      />
-      <div className={styles.menubtn} onClick={MenuToggle}>
-        <div></div>
-        <div></div>
-        <div></div>
+      <div className={styles.mobile_view}>
+        <Image
+          src={require("../assets/images/Group 15163.svg")}
+          alt={"Logo hoge school"}
+          className={styles.logo}
+        />
+
+        <div className={styles.menubtn} onClick={MenuToggle}>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
       </div>
     </div>
   );
