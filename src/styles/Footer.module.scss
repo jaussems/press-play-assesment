@@ -60,4 +60,9 @@
       position: absolute;
     }
   }
+
+  @include responsive(533px) {
+    @include flex-column;
+    height: auto;
+  }
 }
