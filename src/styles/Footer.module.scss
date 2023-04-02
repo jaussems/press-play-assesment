@@ -1,0 +1,62 @@
+@import "mixins.scss";
+@import "variables.scss";
+
+.footer {
+  background: $dark-green-color;
+  @include flex-row;
+  height: 25rem;
+  width: 100%;
+  columns: 2 20rem;
+  padding-top: 4rem;
+  //justify-content: space-between;
+  .paragraph {
+    @include flex-column;
+    width: 27.5rem;
+  }
+  .references {
+    @include flex-column;
+    width: 20rem;
+    ul {
+      list-style: none;
+
+      @include flex-column;
+      justify-content: space-between;
+      gap: 1.2rem;
+    }
+  }
+
+  .contact {
+    @include flex-column;
+    ul {
+      list-style: none;
+      @include flex-column;
+      gap: 2rem;
+    }
+  }
+  .logo {
+    margin: 1rem;
+  }
+
+  .email {
+    @include flex-row;
+    align-items: center;
+    gap: 1rem;
+    background-blend-mode: lighten;
+    border: 0.2rem solid white;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    width: 20rem;
+  }
+
+  .small_logo {
+    border-radius: 2rem;
+    //background-color: white;
+    opacity: 0.5;
+
+    img {
+      height: 2.5rem;
+      width: 2rem;
+      position: absolute;
+    }
+  }
+}

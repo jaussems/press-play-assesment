@@ -5,6 +5,7 @@ import styles from "@/styles/Home.module.scss";
 import NavBar from "@/components/NavBar";
 import Article from "@/components/Article";
 import Card from "@/components/Card";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -16,7 +17,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <NavBar></NavBar>
+        {/* <NavBar></NavBar>
         <div>Intro Search </div>
         <div>News</div>
         <div className={styles.card_section}>
@@ -27,8 +28,8 @@ export default function Home() {
         <Article></Article>
         <div>Themes</div>
         <div>Materials</div>
-        <Article></Article>
-        <div>Footer component</div>
+        <Article></Article> */}
+        <Footer></Footer>
       </main>
     </>
   );
