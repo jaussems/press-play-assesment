@@ -6,12 +6,13 @@
   @include flex-row;
   height: 25rem;
   width: 100%;
-  columns: 2 20rem;
+  //columns: 2 20rem;
   padding-top: 4rem;
   //justify-content: space-between;
   .paragraph {
     @include flex-column;
     width: 27.5rem;
+    gap: 2.5rem;
   }
   .references {
     @include flex-column;
@@ -40,12 +41,12 @@
   .email {
     @include flex-row;
     align-items: center;
-    gap: 1rem;
+    gap: 1.2rem;
     background-blend-mode: lighten;
-    border: 0.2rem solid white;
+    border: 0.1rem solid white;
     border-radius: 0.5rem;
     padding: 1rem;
-    width: 20rem;
+    width: 25rem;
   }
 
   .small_logo {

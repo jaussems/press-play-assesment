@@ -82,7 +82,7 @@
   .menubtn:hover {
     cursor: pointer;
   }
-  @include responsive(540px) {
+  @include responsive(533px) {
     .mobile {
       // display: block;
       //display: none;
@@ -90,6 +90,9 @@
       ul {
         @include flex-column;
       }
+    }
+    .logo {
+      flex-grow: 0;
     }
 
     .desktop {

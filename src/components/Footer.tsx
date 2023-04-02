@@ -11,7 +11,9 @@ const Footer: React.FC<any> = (props: any) => {
       <div className={styles.paragraph}>
         <p>
           P.A. Hogeschool Rotterdam Onderwijs en Ontwikkeling
-          Samenwerkingsverband ‘Samen werken aan een betere aansluiting vo-ho’
+          Samenwerkingsverband
+          <br />
+          ‘Samen werken aan een betere aansluiting vo-ho’
         </p>
         <div className={styles.email}>
           <Image
