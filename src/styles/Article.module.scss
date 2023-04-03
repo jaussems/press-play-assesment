@@ -1,0 +1,13 @@
+@import "mixins.scss";
+@import "variables.scss";
+
+.article {
+  @include flex-row;
+  .image {
+    width: 20rem;
+    height: 20rem;
+  }
+  .text {
+    @include flex-column;
+  }
+}

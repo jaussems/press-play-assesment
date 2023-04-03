@@ -7,3 +7,10 @@ export interface IinputComponent {
 export interface IButton {
   text: string;
 }
+
+export interface IArticle {
+  src: string;
+  alt: string;
+  header: string;
+  paragraph: string;
+}
