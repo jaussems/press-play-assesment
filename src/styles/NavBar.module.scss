@@ -1,0 +1,125 @@
+@import "mixins.scss";
+@import "variables.scss";
+
+.navbar {
+  width: 100%;
+  background: $base-green-color;
+  height: 5rem;
+  position: absolute;
+  align-items: center;
+
+  .logo {
+    // padding: 1.5rem;
+    padding: 1rem;
+    // margin: 1rem 0rem 0rem 1rem;
+    flex-grow: 0.5;
+  }
+
+  .search_and_login {
+    @include flex-row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .search_icon {
+    width: 2rem;
+    height: 1rem;
+  }
+
+  .loginbutton {
+    border: 1px solid var(--unnamed-color-ffffff);
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    opacity: 1;
+    width: 125px;
+    height: 39px;
+    background: $base-green-color;
+    font-size: 16px;
+  }
+  .desktop {
+    ul {
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+      align-items: center;
+    }
+
+    li {
+      flex-shrink: 1;
+      margin-right: auto;
+    }
+  }
+
+  .show {
+    background: $base-green-color;
+    display: block;
+    align-items: center;
+  }
+  .mobile_view {
+    display: flex;
+    img {
+      display: none;
+    }
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .menubtn {
+    div {
+      border: 2px solid #ffffff;
+      opacity: 1;
+    }
+    @include flex-column;
+    gap: 0.5rem;
+    width: 2rem;
+    height: 2.5rem;
+    margin: 1.5rem;
+    display: none;
+  }
+
+  .menubtn:hover {
+    cursor: pointer;
+  }
+  @include responsive(533px) {
+    .mobile {
+      // display: block;
+      //display: none;
+
+      ul {
+        @include flex-column;
+      }
+    }
+    .logo {
+      flex-grow: 0;
+      margin: 1rem 0rem 0rem 1rem;
+      padding: 0;
+    }
+
+    .desktop {
+      display: none;
+    }
+
+    .toggle {
+      display: block;
+
+      button {
+        color: black;
+        align-items: center;
+      }
+    }
+    .mobile_view {
+      display: flex;
+      justify-content: space-between;
+      img {
+        display: block;
+      }
+    }
+
+    .menubtn {
+      display: flex;
+    }
+  }
+}

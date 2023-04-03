@@ -5,6 +5,7 @@ import styles from "@/styles/Home.module.scss";
 import NavBar from "@/components/NavBar";
 import Article from "@/components/Article";
 import Card from "@/components/Card";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -28,7 +29,7 @@ export default function Home() {
         <div>Themes</div>
         <div>Materials</div>
         <Article></Article>
-        <div>Footer component</div>
+        <Footer></Footer>
       </main>
     </>
   );

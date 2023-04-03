@@ -1,5 +1,15 @@
 @mixin responsive($value) {
-  @media (min-width: $value) {
+  @media (max-width: $value) {
     @content;
   }
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
 }
