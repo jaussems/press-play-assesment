@@ -3,13 +3,22 @@ import Image from "next/image";
 const Footer: React.FC<any> = (props: any) => {
   return (
     <div className={styles.footer}>
-      <Image
-        src={require("../assets/images/Group 15163.svg")}
-        alt={"Logo hoge school"}
-        className={styles.logo}
-      />
+      <div className={styles.logo_and_text}>
+        <Image
+          src={require("../assets/images/Group 15163.svg")}
+          alt={"Logo hoge school"}
+          className={styles.logo}
+        />
+
+        <p className={styles.logo_and_mobile_text}>
+          P.A. Hogeschool Rotterdam Onderwijs en Ontwikkeling
+          Samenwerkingsverband
+          <br />
+          ‘Samen werken aan een betere aansluiting vo-ho’
+        </p>
+      </div>
       <div className={styles.paragraph}>
-        <p>
+        <p className={styles.logo_and_desktop_text}>
           P.A. Hogeschool Rotterdam Onderwijs en Ontwikkeling
           Samenwerkingsverband
           <br />

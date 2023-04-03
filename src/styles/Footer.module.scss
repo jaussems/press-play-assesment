@@ -6,7 +6,7 @@
   @include flex-row;
   height: 25rem;
   width: 100%;
-  gap: 1rem;
+  gap: 14rem;
   padding-top: 4rem;
   //justify-content: space-between;
   .paragraph {
@@ -54,6 +54,10 @@
     width: 25rem;
   }
 
+  .logo_and_mobile_text {
+    display: none;
+  }
+
   .small_logo {
     border-radius: 2rem;
     //background-color: white;
@@ -74,12 +78,16 @@
   @include responsive(533px) {
     @include flex-column;
     height: auto;
-    gap: 1rem;
+    gap: 2rem;
     align-items: left;
     padding: 2rem;
 
     .email {
       width: 20rem;
+    }
+
+    .email_text {
+      white-space: nowrap;
     }
 
     .logo {
@@ -88,6 +96,18 @@
 
     .paragraph {
       width: min-content;
+    }
+
+    .logo_and_text {
+      display: flex;
+      gap: 2rem;
+      line-height: 1.4rem;
+    }
+    .logo_and_mobile_text {
+      display: block;
+    }
+    .logo_and_desktop_text {
+      display: none;
     }
   }
 }
