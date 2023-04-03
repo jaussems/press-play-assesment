@@ -2,10 +2,15 @@
 @import "variables.scss";
 
 .article {
-  @include flex-row;
-  width: 66.25rem;
-  height: 21.6875rem;
-  border-radius: 0px 8px 8px 0px;
+  margin: 0 auto;
+  &_container {
+    @include flex-row;
+    margin: 0 auto;
+    width: 66.25rem;
+    height: 21.6875rem;
+    border-radius: 0px 8px 8px 0px;
+    gap: 2rem;
+  }
 
   .image {
     width: 20rem;
@@ -13,5 +18,15 @@
   }
   .text {
     @include flex-column;
+    justify-content: space-evenly;
   }
+}
+
+.dark {
+  background: $dark-blue-button-color;
+}
+
+.light {
+  background: $white-placeholder-color;
+  color: black;
 }

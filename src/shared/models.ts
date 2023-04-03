@@ -1,11 +1,12 @@
 export interface IinputComponent {
   placeholder: string;
   width: string;
-  class: string;
+  class?: string;
   icon: boolean;
 }
 export interface IButton {
   text: string;
+  isLight?: string;
 }
 
 export interface IArticle {
@@ -13,4 +14,5 @@ export interface IArticle {
   alt: string;
   header: string;
   paragraph: string;
+  class?: string;
 }

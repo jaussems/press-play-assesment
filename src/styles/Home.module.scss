@@ -1,5 +1,5 @@
-@use "variables.scss" as *;
-@use "mixins.scss" as *;
+@import "mixins.scss";
+@import "variables.scss";
 
 .main {
   @include responsive($lg);

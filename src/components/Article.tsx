@@ -5,14 +5,21 @@ import Button from "./Button";
 
 const Article: React.FC<any> = (props: IArticle) => {
   return (
-    <div className={styles.article}>
-      <div className={styles.text}>
-        <h1>{props.header}</h1>
-        <p>{props.paragraph}</p>
-        <Button text={"lees meer"}></Button>
+    <div className={`${styles.article}  `}>
+      <div
+        className={`${styles["article_container"]} ${
+          styles[`${props.class}`]
+        } `}
+      >
+        <div className={styles.text}>
+          <h1>{props.header}</h1>
+          <p>{props.paragraph}</p>
+          <Button isLight={true} text={"lees meer"}></Button>
+        </div>
+        <div className={styles.image}>
+          <Image src={props.src} alt={props.alt} height={"300"} width={"300"} />
+        </div>
       </div>
-      <div className={styles.image}></div>
-      <Image src={props.src} alt={props.alt} height={"400"} width={"400"} />
     </div>
   );
 };

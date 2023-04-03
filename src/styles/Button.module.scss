@@ -15,4 +15,9 @@
   button:hover {
     cursor: pointer;
   }
+
+  .light {
+    background: $white-placeholder-color;
+    color: black;
+  }
 }
