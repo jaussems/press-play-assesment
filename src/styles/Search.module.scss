@@ -34,4 +34,22 @@
     height: 25rem;
     align-self: center;
   }
+
+  @include responsive(533px) {
+    @include flex-column;
+    height: auto;
+    .header_and_inputs {
+      @include flex-column;
+      .inputs {
+        @include flex-column;
+        input {
+          width: min-content;
+        }
+      }
+    }
+
+    .image {
+      display: none;
+    }
+  }
 }
