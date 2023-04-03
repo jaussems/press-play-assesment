@@ -14,8 +14,16 @@ const Search: React.FC<any> = (props: PropsWithChildren) => {
         </h1>
 
         <div className={styles.inputs}>
-          <Input placeholder={"Zoek naar materialen"} width={"20rem"}></Input>
-          <Input placeholder={"Alle niveaus"} width={"10rem"}>
+          <Input
+            placeholder={"Zoek naar materialen"}
+            className={styles.inputsearch}
+            class={styles["search--search-width"]}
+          ></Input>
+          <Input
+            placeholder={"Alle niveaus"}
+            className={styles.inputselect}
+            class={styles["search--select-width"]}
+          >
             {" "}
           </Input>
           <Button text={"Zoeken"}></Button>

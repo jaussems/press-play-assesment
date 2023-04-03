@@ -8,6 +8,15 @@
   justify-content: space-evenly;
   padding: 2rem;
   overflow: hidden;
+
+  &--search-width {
+    width: 20rem;
+  }
+
+  &--select-width {
+    width: 10rem;
+  }
+
   @include flex-row;
   h1 {
     width: 20rem;
