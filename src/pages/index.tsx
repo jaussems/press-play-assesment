@@ -18,7 +18,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        {/* <NavBar></NavBar> */}
+        <NavBar></NavBar>
         <Search></Search>
         {/* <div>News</div>
         <div className={styles.card_section}>

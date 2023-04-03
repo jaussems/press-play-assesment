@@ -3,25 +3,28 @@
 
 .search {
   background-color: $base-green-color;
-  height: 20rem;
+  height: 25rem;
   width: 100%;
-  justify-content: space-evenly;
+  border: 0px solid $base-green-color;
+  border-style: solid;
+
+  //justify-content: space-evenly;
   padding: 2rem;
   overflow: hidden;
 
   &--search-width {
-    width: 20rem;
+    width: 26.25rem;
   }
 
   &--select-width {
-    width: 10rem;
+    width: 16.6425rem;
   }
 
   @include flex-row;
 
   .header_and_inputs {
     @include flex-column;
-    width: 50%;
+    width: 60%;
     gap: 1rem;
 
     .inputs {
