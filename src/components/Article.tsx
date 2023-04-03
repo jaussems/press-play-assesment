@@ -1,4 +1,4 @@
-import { IArticle } from "@/shared/models";
+import { IArticle, ITag } from "@/shared/models";
 import styles from "../styles/Article.module.scss";
 import Image from "next/image";
 import Button from "./Button";
@@ -13,9 +13,15 @@ const Article: React.FC<any> = (props: IArticle) => {
         } `}
       >
         <div className={styles.text}>
-          {props.tags && props.tags.length > 0
-            ? props.tags.map((tag) => <Tag>{tag.text}</Tag>)
-            : null}
+          <div className={styles.tags}>
+            {props.tags && props.tags.length > 0
+              ? props.tags.map((tag: ITag) => (
+                  <>
+                    <Tag text={tag.text}></Tag>
+                  </>
+                ))
+              : null}
+          </div>
           <h1>{props.header}</h1>
           <p>{props.paragraph}</p>
           <Button isLight={props.isLightBtn} text={props.buttonText}></Button>

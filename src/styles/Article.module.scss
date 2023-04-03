@@ -11,6 +11,11 @@
     border-radius: 0px 8px 8px 0px;
     gap: 2rem;
   }
+  .tags {
+    @include flex-row;
+    justify-content: flex-start;
+    gap: 1rem;
+  }
 
   image {
     width: 20rem;

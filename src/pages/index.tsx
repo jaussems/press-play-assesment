@@ -7,6 +7,7 @@ import Article from "@/components/Article";
 import Card from "@/components/Card";
 import Footer from "@/components/Footer";
 import Search from "@/components/Search";
+import { ArticleTags } from "@/shared/config";
 
 export default function Home() {
   return (
@@ -32,6 +33,7 @@ export default function Home() {
           paragraph={
             "Vertegenwoordigers van een groot aantal vo-scholen hebben samen met de vier Rotterdamse hbo-instellingen een intentieverklaring getekend om intensiever samen te werken op een zestal thema’s die er samen voor zorgen dat de aansluiting van vo naar hbo goed verloopt."
           }
+          alt={"Picture of a famous house in Rotterdam"}
           class={"dark"}
           isLightBtn={true}
           buttonText={"Lees meer"}
@@ -39,12 +41,14 @@ export default function Home() {
         <Article
           header={"Wat kost studeren?"}
           src={require("../assets/images/article_2_photo.jpg")}
+          alt={"Picture of a book"}
           paragraph={
             "Studeren is een geweldige investering in jouw toekomst. Ontdek hier hoe studeren ook voor jou betaalbaar is. Met een goed plan begin je straks voorbereid aan je studietijd!"
           }
           class={"light"}
           isLightBtn={false}
           buttonText={"Lees artikel"}
+          tags={ArticleTags.ArticleOneTags}
         ></Article>
 
         {/* <div>Themes</div>
