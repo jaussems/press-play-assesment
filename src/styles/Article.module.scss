@@ -8,8 +8,10 @@
     margin: 0 auto;
     width: 66.25rem;
     height: 21.6875rem;
-    border-radius: 0px 8px 8px 0px;
+    border-radius: 8px;
+    box-shadow: 0px 10px 20px #00000014;
     gap: 2rem;
+    padding: 1.5rem;
   }
   .tags {
     @include flex-row;
