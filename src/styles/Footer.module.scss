@@ -39,7 +39,7 @@
     }
   }
   .logo {
-    margin: 1rem;
+    margin-left: 1rem;
   }
 
   .email {
@@ -80,6 +80,14 @@
 
     .email {
       width: 20rem;
+    }
+
+    .logo {
+      margin: 0;
+    }
+
+    .paragraph {
+      width: min-content;
     }
   }
 }
