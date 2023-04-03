@@ -27,6 +27,26 @@
     @include flex-column;
     justify-content: space-evenly;
   }
+
+  @include responsive(533px) {
+    .article {
+      margin: 0 auto;
+      &_container {
+        @include flex-column-reverse;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        justify-content: space-evenly;
+      }
+      .image {
+        width: 100%;
+      }
+
+      .text {
+        justify-content: flex-end;
+      }
+    }
+  }
 }
 
 .dark {

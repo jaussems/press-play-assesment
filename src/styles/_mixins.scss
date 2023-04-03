@@ -16,6 +16,11 @@
   flex-direction: row;
 }
 
+@mixin flex-column-reverse {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
 @mixin placeholder {
   ::-webkit-input-placeholder {
     @content;
