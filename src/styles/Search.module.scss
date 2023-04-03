@@ -5,4 +5,12 @@
   background-color: $base-green-color;
   height: 20rem;
   width: 100%;
+
+  .input {
+    height: 20rem;
+  }
+
+  .highlight {
+    color: $dark-green-color;
+  }
 }
