@@ -3,6 +3,10 @@
 
 .article {
   @include flex-row;
+  width: 66.25rem;
+  height: 21.6875rem;
+  border-radius: 0px 8px 8px 0px;
+
   .image {
     width: 20rem;
     height: 20rem;

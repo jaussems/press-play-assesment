@@ -21,16 +21,22 @@ export default function Home() {
         <NavBar></NavBar>
         <Search></Search>
         <div>News</div>
-        <div className={styles.card_section}>
+        {/* <div className={styles.card_section}>
           <Card></Card>
           <Card></Card>
           <Card></Card>
-        </div>
-        <Article></Article>
-        <div>Themes</div>
+        </div> */}
+        {/* <Article
+          header={"Het samenwerkingsverband"}
+          src={require("../assets/images/article_1_photo.jpg")}
+          paragraph={
+            "Vertegenwoordigers van een groot aantal vo-scholen hebben samen met de vier Rotterdamse hbo-instellingen een intentieverklaring getekend om intensiever samen te werken op een zestal thema’s die er samen voor zorgen dat de aansluiting van vo naar hbo goed verloopt."
+          }
+        ></Article> */}
+        {/* <div>Themes</div>
         <div>Materials</div>
         <Article></Article>
-        <Footer></Footer>
+        <Footer></Footer> */}
       </main>
     </>
   );
