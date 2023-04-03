@@ -17,4 +17,11 @@ export interface IArticle {
   class?: string;
   buttonText: string;
   isLightBtn?: boolean;
+  tags?: IArrayOfTags;
 }
+
+export interface ITag {
+  text: string;
+}
+
+export interface IArrayOfTags extends Array<ITag> {}
