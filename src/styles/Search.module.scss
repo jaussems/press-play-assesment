@@ -5,12 +5,23 @@
   background-color: $base-green-color;
   height: 20rem;
   width: 100%;
+  @include flex-row;
 
-  .input {
+  .header_and_inputs {
     height: 20rem;
+    @include flex-column;
+
+    .inputs {
+      @include flex-row;
+    }
   }
 
   .highlight {
     color: $dark-green-color;
+  }
+  .image {
+    width: 25rem;
+    position: relative;
+    height: 25rem;
   }
 }
