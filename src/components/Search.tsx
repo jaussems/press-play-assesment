@@ -13,8 +13,10 @@ const Search: React.FC<any> = (props: PropsWithChildren) => {
         </h1>
 
         <div className={styles.inputs}>
-          <Input></Input>
-          <Input></Input>
+          <Input placeholder={"Zoek naar materialen"} width={"20rem"}></Input>
+          <Input placeholder={"Alle niveaus"} width={"10rem"}>
+            {" "}
+          </Input>
         </div>
       </div>
       <div className={styles.image}>

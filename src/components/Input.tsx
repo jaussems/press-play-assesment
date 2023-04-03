@@ -5,7 +5,11 @@ import { IinputComponent } from "@/shared/models";
 const Input: React.FC<any> = (props: IinputComponent) => {
   return (
     <div className={styles.input_container}>
-      <input className={styles.input} placeholder={props.placeholder}></input>
+      <input
+        className={styles.input}
+        style={{ width: props.width }}
+        placeholder={props.placeholder}
+      ></input>
     </div>
   );
 };
