@@ -39,11 +39,15 @@
     @include flex-column;
     height: auto;
     .header_and_inputs {
+      width: 100%;
+
       @include flex-column;
       .inputs {
+        width: 100%;
         @include flex-column;
         input {
-          width: min-content;
+          width: 100%;
+          // width: min-content;
         }
       }
     }
