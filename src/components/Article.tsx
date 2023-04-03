@@ -14,7 +14,7 @@ const Article: React.FC<any> = (props: IArticle) => {
         <div className={styles.text}>
           <h1>{props.header}</h1>
           <p>{props.paragraph}</p>
-          <Button isLight={true} text={"lees meer"}></Button>
+          <Button isLight={props.isLightBtn} text={props.buttonText}></Button>
         </div>
         <div className={styles.image}>
           <Image src={props.src} alt={props.alt} height={"300"} width={"300"} />

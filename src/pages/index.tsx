@@ -33,14 +33,18 @@ export default function Home() {
             "Vertegenwoordigers van een groot aantal vo-scholen hebben samen met de vier Rotterdamse hbo-instellingen een intentieverklaring getekend om intensiever samen te werken op een zestal thema’s die er samen voor zorgen dat de aansluiting van vo naar hbo goed verloopt."
           }
           class={"dark"}
+          isLightBtn={true}
+          buttonText={"Lees meer"}
         ></Article>
         <Article
           header={"Wat kost studeren?"}
-          src={require("../assets/images/article_1_photo.jpg")}
+          src={require("../assets/images/article_2_photo.jpg")}
           paragraph={
             "Studeren is een geweldige investering in jouw toekomst. Ontdek hier hoe studeren ook voor jou betaalbaar is. Met een goed plan begin je straks voorbereid aan je studietijd!"
           }
           class={"light"}
+          isLightBtn={false}
+          buttonText={"Lees artikel"}
         ></Article>
 
         {/* <div>Themes</div>

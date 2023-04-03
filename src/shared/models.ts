@@ -15,4 +15,6 @@ export interface IArticle {
   header: string;
   paragraph: string;
   class?: string;
+  buttonText: string;
+  isLightBtn?: boolean;
 }
