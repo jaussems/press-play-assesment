@@ -6,6 +6,7 @@ import NavBar from "@/components/NavBar";
 import Article from "@/components/Article";
 import Card from "@/components/Card";
 import Footer from "@/components/Footer";
+import Search from "@/components/Search";
 
 export default function Home() {
   return (
@@ -18,7 +19,7 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <NavBar></NavBar>
-        <div>Intro Search </div>
+        <Search></Search>
         <div>News</div>
         <div className={styles.card_section}>
           <Card></Card>
