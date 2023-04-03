@@ -5,14 +5,22 @@
   background-color: $base-green-color;
   height: 20rem;
   width: 100%;
+  justify-content: space-evenly;
+  padding: 2rem;
+  overflow: hidden;
   @include flex-row;
-
+  h1 {
+    width: 20rem;
+  }
   .header_and_inputs {
-    height: 20rem;
     @include flex-column;
+    width: 50%;
+    gap: 1rem;
 
     .inputs {
       @include flex-row;
+      justify-content: space-between;
+      width: 25rem;
     }
   }
 
@@ -20,8 +28,9 @@
     color: $dark-green-color;
   }
   .image {
-    width: 25rem;
+    width: 20%;
     position: relative;
     height: 25rem;
+    align-self: center;
   }
 }

@@ -11,6 +11,7 @@ const Search: React.FC<any> = (props: PropsWithChildren) => {
           Hét platform voor een betere samenwerking VO-HO{" "}
           <span className={styles.highlight}>regio Rotterdam</span>
         </h1>
+
         <div className={styles.inputs}>
           <Input></Input>
           <Input></Input>
