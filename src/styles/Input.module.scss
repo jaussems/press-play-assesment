@@ -14,10 +14,10 @@
     font-size: 16px;
     border-radius: 0.25rem;
     border: 0;
+    padding-left: 1rem;
   }
   @include placeholder {
     font-size: larger;
-    color: rgb(129, 122, 122);
-    padding-left: 1rem;
+    color: $grey-placeholder-color;
   }
 }
