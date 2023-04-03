@@ -2,6 +2,7 @@ import React, { PropsWithChildren } from "react";
 import styles from "../styles/Search.module.scss";
 import Input from "./Input";
 import Image from "next/image";
+import Button from "./Button";
 
 const Search: React.FC<any> = (props: PropsWithChildren) => {
   return (
@@ -17,6 +18,7 @@ const Search: React.FC<any> = (props: PropsWithChildren) => {
           <Input placeholder={"Alle niveaus"} width={"10rem"}>
             {" "}
           </Input>
+          <Button text={"Zoeken"}></Button>
         </div>
       </div>
       <div className={styles.image}>
