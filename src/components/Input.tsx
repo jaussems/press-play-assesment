@@ -5,8 +5,9 @@ const Input: React.FC<any> = (props: IinputComponent) => {
   return (
     <div className={styles.input_container}>
       <input
-        className={`${styles.input} ${styles.icon}  ${props.class}`}
-        // style={{ width: props.width }}
+        className={`${styles.input} ${
+          props.icon ? styles["--icon"] : styles["--no_icon"]
+        }  ${props.class}`}
         placeholder={props.placeholder}
       ></input>
     </div>

@@ -18,6 +18,7 @@ const Search: React.FC<any> = (props: PropsWithChildren) => {
             placeholder={"Zoek naar materialen"}
             className={styles.inputsearch}
             class={styles["search--search-width"]}
+            icon={true}
           ></Input>
           <Input
             placeholder={"Alle niveaus"}

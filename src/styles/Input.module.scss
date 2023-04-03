@@ -4,13 +4,13 @@
 .input_container {
   .input {
     border-radius: 4px;
-    background: #ffffff 0% 0% no-repeat padding-box;
+    background: $base-green-color 0% 0% no-repeat padding-box;
     box-shadow: 0px 10px 20px #00000029;
     border-radius: 8px;
 
     opacity: 0.7;
     height: 3.4375rem;
-    color: black;
+    color: rgb(255, 255, 255);
     font-size: 16px;
     border-radius: 0.25rem;
     border: 0;
@@ -18,12 +18,17 @@
   }
   @include placeholder {
     font-size: larger;
-    color: $grey-placeholder-color;
+    color: $white-placeholder-color;
   }
 
-  .icon {
+  .--icon {
     background: url("../assets/icons/search_icon.svg") no-repeat 8px 7px;
     background-position: 1rem;
     background-size: 1.1rem;
+  }
+
+  .--no_icon {
+    padding-left: 1rem;
+    //background: $base-green-color;
   }
 }
