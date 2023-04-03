@@ -34,6 +34,15 @@ export default function Home() {
           }
           class={"dark"}
         ></Article>
+        <Article
+          header={"Wat kost studeren?"}
+          src={require("../assets/images/article_1_photo.jpg")}
+          paragraph={
+            "Studeren is een geweldige investering in jouw toekomst. Ontdek hier hoe studeren ook voor jou betaalbaar is. Met een goed plan begin je straks voorbereid aan je studietijd!"
+          }
+          class={"light"}
+        ></Article>
+
         {/* <div>Themes</div>
         <div>Materials</div>
         <Article></Article>
