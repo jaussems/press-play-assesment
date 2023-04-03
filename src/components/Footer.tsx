@@ -22,9 +22,9 @@ const Footer: React.FC<any> = (props: any) => {
             className={styles.small_logo}
           />
 
-          <p>
-            <b>Voor vragen mail naar:</b> Samenwerkingvo-hbo@hr.nl
-          </p>
+          <div className={styles.email_text}>
+            <b>Voor vragen mail naar:</b> <p>Samenwerkingvo-hbo@hr.nl</p>
+          </div>
         </div>
       </div>
       <div className={styles.references}>
