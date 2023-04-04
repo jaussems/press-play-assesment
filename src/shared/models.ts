@@ -25,3 +25,17 @@ export interface ITag {
 }
 
 export interface IArrayOfTags extends Array<ITag> {}
+
+export interface IThemeButton {
+  icon: string;
+  alt: string;
+  text: string;
+}
+
+export interface IArrayOfThemeButtons extends Array<IThemeButton> {}
+
+export interface IThemeComponent {
+  header: string;
+  text: string;
+  themebuttons: IArrayOfThemeButtons;
+}

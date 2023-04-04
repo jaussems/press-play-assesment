@@ -1,5 +1,5 @@
-@import "mixins.scss";
-@import "variables.scss";
+@import "../mixins";
+@import "../variables";
 
 .navbar {
   width: 100%;
@@ -9,9 +9,7 @@
   align-items: center;
 
   .logo {
-    // padding: 1.5rem;
     padding: 1rem;
-    // margin: 1rem 0rem 0rem 1rem;
     flex-grow: 0.5;
   }
 
@@ -85,9 +83,6 @@
   }
   @include responsive(533px) {
     .mobile {
-      // display: block;
-      //display: none;
-
       ul {
         @include flex-column;
       }

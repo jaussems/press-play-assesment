@@ -7,7 +7,8 @@ import Article from "@/components/Article";
 import Card from "@/components/Card";
 import Footer from "@/components/Footer";
 import Search from "@/components/Search";
-import { ArticleTags } from "@/shared/config";
+import { ArticleTags, ThemeObjects } from "@/shared/config";
+import Themes from "@/components/Themes";
 
 export default function Home() {
   return (
@@ -50,11 +51,17 @@ export default function Home() {
           buttonText={"Lees artikel"}
           tags={ArticleTags.ArticleOneTags}
         ></Article>
-
+        <Themes
+          header={"Onze thema’s"}
+          text={
+            "AVOHO richt zich op meerdere thema’s binnen het VO en HO onderwijs."
+          }
+          themebuttons={ThemeObjects}
+        ></Themes>
         {/* <div>Themes</div>
         <div>Materials</div>
-        <Article></Article>
-        <Footer></Footer> */}
+        <Article></Article> */}
+        <Footer></Footer>
       </main>
     </>
   );

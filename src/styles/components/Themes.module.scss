@@ -1,0 +1,39 @@
+@import "../variables";
+@import "../mixins";
+
+.container {
+  background-color: $base-green-color;
+  width: 90%;
+  height: 80%;
+  margin: 0 auto;
+  padding: 5rem;
+  border-radius: 1rem;
+  .text {
+    @include flex-column;
+    gap: 2rem;
+    p {
+      margin-bottom: 2rem;
+    }
+  }
+  .buttons {
+    @include flex-row-wrap;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  @include responsive(533px) {
+    width: 100%;
+    padding: 2rem;
+    border-radius: 0;
+    .buttons {
+      @include flex-column;
+      flex-wrap: wrap;
+
+      height: auto;
+      justify-content: space-between;
+      p {
+        padding: 0;
+      }
+    }
+  }
+}

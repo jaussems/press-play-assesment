@@ -1,5 +1,5 @@
 import React, { PropsWithChildren } from "react";
-import styles from "../styles/Search.module.scss";
+import styles from "../styles/components/Search.module.scss";
 import Input from "./Input";
 import Image from "next/image";
 import Button from "./Button";

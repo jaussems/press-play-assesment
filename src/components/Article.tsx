@@ -1,5 +1,5 @@
 import { IArticle, ITag } from "@/shared/models";
-import styles from "../styles/Article.module.scss";
+import styles from "../styles/components/Article.module.scss";
 import Image from "next/image";
 import Button from "./Button";
 import Tag from "./Tag";

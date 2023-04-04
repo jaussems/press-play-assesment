@@ -1,4 +1,4 @@
-import styles from "../styles/Button.module.scss";
+import styles from "../styles/components/Button.module.scss";
 import { IButton } from "@/shared/models";
 import { clsx } from "clsx";
 
