@@ -1,0 +1,72 @@
+@import "mixins.scss";
+@import "variables.scss";
+
+.search {
+  background-color: $base-green-color;
+  height: 25rem;
+  width: 100%;
+  border: 0px solid $base-green-color;
+  border-style: solid;
+
+  //justify-content: space-evenly;
+  padding: 2rem;
+  overflow: hidden;
+
+  &--search-width {
+    width: 26.25rem;
+  }
+
+  &--select-width {
+    width: 16.6425rem;
+  }
+
+  @include flex-row;
+
+  .header_and_inputs {
+    @include flex-column;
+    width: 60%;
+    gap: 1rem;
+
+    .inputs {
+      @include flex-row;
+      justify-content: space-between;
+      width: 25rem;
+      gap: 2rem;
+    }
+  }
+
+  .highlight {
+    color: $dark-green-color;
+  }
+  .image {
+    width: 20%;
+    position: relative;
+    height: 25rem;
+    align-self: center;
+  }
+
+  @include responsive(533px) {
+    @include flex-column;
+    height: auto;
+    .header_and_inputs {
+      width: 100%;
+
+      @include flex-column;
+      .inputs {
+        width: 100%;
+        @include flex-column;
+        input {
+          width: 100%;
+          // width: min-content;
+        }
+      }
+      button {
+        width: 100%;
+      }
+    }
+
+    .image {
+      display: none;
+    }
+  }
+}
