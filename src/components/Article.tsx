@@ -15,10 +15,10 @@ const Article: React.FC<any> = (props: IArticle) => {
         <div className={styles.text}>
           <div className={styles.tags}>
             {props.tags && props.tags.length > 0
-              ? props.tags.map((tag: ITag) => (
-                  <>
+              ? props.tags.map((tag: ITag, index: number) => (
+                  <div key={index}>
                     <Tag text={tag.text}></Tag>
-                  </>
+                  </div>
                 ))
               : null}
           </div>
