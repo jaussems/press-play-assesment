@@ -17,6 +17,7 @@
     @include flex-row;
     justify-content: flex-start;
     gap: 1rem;
+    margin-bottom: 1rem;
   }
 
   .image {
@@ -40,11 +41,23 @@
         height: 100%;
         padding: 0;
         justify-content: space-between;
-        gap: 2.5rem;
+        gap: 0.5rem;
       }
+    }
 
-      .text {
-        justify-content: flex-end;
+    .text {
+      h1 {
+        font-size: 26px;
+      }
+      width: 100%;
+      align-self: center;
+      line-height: 1.55rem;
+      padding: 2rem;
+      min-height: 25rem;
+      gap: 1.5rem;
+
+      button {
+        width: 40%;
       }
     }
     .image {
