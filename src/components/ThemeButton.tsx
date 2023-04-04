@@ -10,8 +10,6 @@ const ThemeButton: React.FC<IThemeButton> = (props) => {
       <Image
         src={require("../assets/icons/ic_arrowcircle_inverted.svg")}
         alt={"Arrow icon pointing to the right"}
-        width={"2"}
-        height={"2"}
       />
     </div>
   );
