@@ -3,7 +3,7 @@ import styles from "../styles/components/NavBar.module.scss";
 import { clsx } from "clsx";
 import Image from "next/image";
 
-const NavBar: React.FC<any> = (props: PropsWithChildren) => {
+const NavBar: React.FC<PropsWithChildren> = (props) => {
   let shownMenu: boolean = true;
   const [toggle, setToggle] = useState(false);
   function MenuToggle() {

@@ -1,6 +1,6 @@
 import styles from "../styles/components/Footer.module.scss";
 import Image from "next/image";
-const Footer: React.FC<any> = (props: any) => {
+const Footer: React.FC<any> = (props) => {
   return (
     <div className={styles.footer}>
       <div className={styles.logo_and_text}>
