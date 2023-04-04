@@ -4,15 +4,16 @@ import ThemeButton from "./ThemeButton";
 
 const Themes: React.FC<IThemeComponent> = (props) => {
   return (
-    <div className={styles.themes}>
-      <div className={styles["themes__text"]}>
+    <div className={styles.container}>
+      <div className={styles.text}>
         <h1>{props.header}</h1>
         <p>{props.text}</p>
       </div>
-      <div className={styles["themes__buttons"]}>
+      <div className={styles.buttons}>
         {props.themebuttons && props.themebuttons.length > 0
-          ? props.themebuttons.map((theme) => (
+          ? props.themebuttons.map((theme, index) => (
               <ThemeButton
+                key={index}
                 icon={require(`../assets/icons/${theme.icon}`)}
                 alt={`${theme.icon}`}
                 text={theme.text}

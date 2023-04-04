@@ -4,7 +4,7 @@ import { IThemeButton } from "@/shared/models";
 
 const ThemeButton: React.FC<IThemeButton> = (props) => {
   return (
-    <div className={styles.themebutton}>
+    <div className={styles.container}>
       <Image src={props.icon} alt={props.alt} />
       <p>{props.text}</p>
       <Image
