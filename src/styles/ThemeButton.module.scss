@@ -23,5 +23,13 @@
     width: 100%;
     gap: 1rem;
     padding: 1rem;
+    justify-content: left;
+    font-size: 0.9rem;
+    mg:nth-child(1) {
+      margin-left: auto;
+    }
+    .arrow {
+      margin-left: auto;
+    }
   }
 }
