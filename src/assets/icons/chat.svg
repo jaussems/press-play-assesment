@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <g id="Group_15931" data-name="Group 15931" transform="translate(0 -253.498)">
+    <circle id="Ellipse_85" data-name="Ellipse 85" cx="32" cy="32" r="32" transform="translate(0 253.498)" fill="#fff"/>
+    <g id="Group_16080" data-name="Group 16080">
+      <circle id="Ellipse_85-2" data-name="Ellipse 85" cx="32" cy="32" r="32" transform="translate(0 253.498)" fill="#fff" opacity="0.17"/>
+      <path id="chat_bubble_FILL1_wght400_GRAD0_opsz48" d="M4,31.607V6.071a2.006,2.006,0,0,1,.621-1.432A1.961,1.961,0,0,1,6.071,4H29.537a1.98,1.98,0,0,1,1.432.638,1.98,1.98,0,0,1,.638,1.432V24.015a2.19,2.19,0,0,1-2.071,2.071H9.521Z" transform="translate(14.197 270.324)" fill="#22223a"/>
+    </g>
+  </g>
+</svg>
