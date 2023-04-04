@@ -1,5 +1,5 @@
-@import "./variables";
-@import "./mixins";
+@import "../variables";
+@import "../mixins";
 
 .input_container {
   .input {
@@ -22,13 +22,12 @@
   }
 
   .--icon {
-    background: url("../assets/icons/search_icon.svg") no-repeat 8px 7px;
+    background: url("../../assets/icons/search_icon.svg") no-repeat 8px 7px;
     background-position: 1rem;
     background-size: 1.1rem;
   }
 
   .--no_icon {
     padding-left: 1rem;
-    //background: $base-green-color;
   }
 }

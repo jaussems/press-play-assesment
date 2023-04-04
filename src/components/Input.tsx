@@ -1,4 +1,4 @@
-import styles from "../styles/Input.module.scss";
+import styles from "../styles/components/Input.module.scss";
 import { IinputComponent } from "@/shared/models";
 
 const Input: React.FC<any> = (props: IinputComponent) => {

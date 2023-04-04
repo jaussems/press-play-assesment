@@ -1,5 +1,5 @@
 import { IThemeComponent } from "@/shared/models";
-import styles from "../styles/Themes.module.scss";
+import styles from "../styles/components/Themes.module.scss";
 import ThemeButton from "./ThemeButton";
 
 const Themes: React.FC<IThemeComponent> = (props) => {

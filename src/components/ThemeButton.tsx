@@ -1,4 +1,4 @@
-import styles from "../styles/ThemeButton.module.scss";
+import styles from "../styles/components/ThemeButton.module.scss";
 import Image from "next/image";
 import { IThemeButton } from "@/shared/models";
 
