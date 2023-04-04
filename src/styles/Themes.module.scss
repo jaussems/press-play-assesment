@@ -3,4 +3,11 @@
 
 .themes {
   background-color: $base-green-color;
+
+  &__text {
+    @include flex-column;
+  }
+  &__buttons {
+    @include flex-row-wrap;
+  }
 }

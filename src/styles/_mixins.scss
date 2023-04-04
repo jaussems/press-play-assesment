@@ -16,6 +16,12 @@
   flex-direction: row;
 }
 
+@mixin flex-row-wrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 @mixin flex-column-reverse {
   display: flex;
   flex-direction: column-reverse;
