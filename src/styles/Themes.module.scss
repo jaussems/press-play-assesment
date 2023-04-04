@@ -24,7 +24,7 @@
   @include responsive(533px) {
     width: 100%;
     padding: 2rem;
-
+    border-radius: 0;
     .buttons {
       @include flex-column;
       flex-wrap: wrap;

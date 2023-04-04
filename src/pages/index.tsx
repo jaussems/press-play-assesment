@@ -60,8 +60,8 @@ export default function Home() {
         ></Themes>
         {/* <div>Themes</div>
         <div>Materials</div>
-        <Article></Article>
-        <Footer></Footer> */}
+        <Article></Article> */}
+        <Footer></Footer>
       </main>
     </>
   );
