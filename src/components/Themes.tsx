@@ -13,7 +13,7 @@ const Themes: React.FC<IThemeComponent> = (props) => {
         {props.themebuttons && props.themebuttons.length > 0
           ? props.themebuttons.map((theme) => (
               <ThemeButton
-                icon={theme.icon}
+                icon={require(`../assets/icons/${theme.icon}`)}
                 alt={`${theme.icon}`}
                 text={theme.text}
               ></ThemeButton>

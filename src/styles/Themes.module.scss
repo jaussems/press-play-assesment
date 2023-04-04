@@ -1,13 +1,16 @@
-@import "./variables";
-@import "./mixins";
+@import "variables";
+@import "mixins";
 
 .themes {
   background-color: $base-green-color;
-
+  height: 40rem;
   &__text {
     @include flex-column;
   }
   &__buttons {
     @include flex-row-wrap;
+    width: 80%;
+    justify-content: space-around;
+    height: 20rem;
   }
 }
