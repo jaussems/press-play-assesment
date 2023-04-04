@@ -25,3 +25,11 @@ export interface ITag {
 }
 
 export interface IArrayOfTags extends Array<ITag> {}
+
+export interface IThemeButton {
+  src: string;
+  alt: string;
+  text: string;
+}
+
+export interface IArrayOfThemeButtons extends Array<IThemeButton> {}
