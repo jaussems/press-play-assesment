@@ -1,5 +1,5 @@
 import { PropsWithChildren, useState } from "react";
-import styles from "../styles/NavBar.module.scss";
+import styles from "../styles/components/NavBar.module.scss";
 import { clsx } from "clsx";
 import Image from "next/image";
 
@@ -7,7 +7,6 @@ const NavBar: React.FC<any> = (props: PropsWithChildren) => {
   let shownMenu: boolean = true;
   const [toggle, setToggle] = useState(false);
   function MenuToggle() {
-    console.log("clicked", shownMenu);
     setToggle(!toggle);
   }
 
