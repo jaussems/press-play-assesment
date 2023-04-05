@@ -22,6 +22,22 @@ export default function Home() {
       <main className={styles.main}>
         <NavBar></NavBar>
         <Search></Search>
+        <Article
+          header={
+            "Loopbaanadviseur WO aan het woord: ‘Begin niet bij mogelijke studies, maar bij jezelf’"
+          }
+          src={require("../assets/images/article_3_photo.jpg")}
+          paragraph={
+            "Loopbaanadviseur Mervyn Nankoe van de Erasmus Universiteit Rotterdam rekent graag af met keuzestress over een studie of vervolgstap."
+          }
+          tags={[{ text: "Nieuws" }]}
+          alt={"Picture of a famous house in Rotterdam"}
+          class={"dark"}
+          isLightBtn={true}
+          buttonText={"Lees meer"}
+          isFlipped={true}
+        ></Article>
+
         {/* <div>News</div> */}
 
         {/* <div className={styles.card_section}>
@@ -39,7 +55,6 @@ export default function Home() {
           class={"dark"}
           isLightBtn={true}
           buttonText={"Lees meer"}
-          isFlipped={true}
         ></Article>
         <Article
           header={"Wat kost studeren?"}

@@ -16,15 +16,6 @@ const Article: React.FC<any> = (props: IArticle) => {
           `${styles["article_container"]} ${styles[`${props.class}`]} `
         )}
       >
-        {/* 
-<div
-        className={`${styles["article_container"]} ${
-          styles[`${props.class}`]
-        } `
-       
-      }
-      > */}
-
         <div className={styles.text}>
           <div className={styles.tags}>
             {props.tags && props.tags.length > 0

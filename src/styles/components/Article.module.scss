@@ -3,9 +3,14 @@
 
 .article {
   margin: 0 auto;
+
+  h1 {
+    font-size: 32px;
+  }
   &_container {
     @include flex-row;
     margin: 0 auto;
+
     width: 66.25rem;
     height: 21.6875rem;
     border-radius: 8px;
@@ -36,6 +41,7 @@
     @include flex-column;
     justify-content: space-evenly;
     padding: 1.5rem;
+    gap: 1rem;
   }
 
   @include responsive(533px) {
