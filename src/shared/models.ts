@@ -18,10 +18,13 @@ export interface IArticle {
   buttonText: string;
   isLightBtn?: boolean;
   tags?: IArrayOfTags;
+  isFlipped?: boolean;
+  tagClass?: string;
 }
 
 export interface ITag {
   text: string;
+  class?: string;
 }
 
 export interface IArrayOfTags extends Array<ITag> {}

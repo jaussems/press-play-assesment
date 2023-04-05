@@ -3,21 +3,25 @@ import styles from "../styles/components/Article.module.scss";
 import Image from "next/image";
 import Button from "./Button";
 import Tag from "./Tag";
+import { clsx } from "clsx";
 
 const Article: React.FC<any> = (props: IArticle) => {
   return (
     <div className={`${styles.article}  `}>
       <div
-        className={`${styles["article_container"]} ${
-          styles[`${props.class}`]
-        } `}
+        className={clsx(
+          {
+            [styles.flipped]: props.isFlipped,
+          },
+          `${styles["article_container"]} ${styles[`${props.class}`]} `
+        )}
       >
         <div className={styles.text}>
           <div className={styles.tags}>
             {props.tags && props.tags.length > 0
               ? props.tags.map((tag: ITag, index: number) => (
                   <div key={index}>
-                    <Tag text={tag.text}></Tag>
+                    <Tag text={tag.text} class={`${props.tagClass}`}></Tag>
                   </div>
                 ))
               : null}

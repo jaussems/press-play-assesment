@@ -22,7 +22,25 @@ export default function Home() {
       <main className={styles.main}>
         <NavBar></NavBar>
         <Search></Search>
+        <Article
+          header={
+            "Loopbaanadviseur WO aan het woord: ‘Begin niet bij mogelijke studies, maar bij jezelf’"
+          }
+          src={require("../assets/images/article_3_photo.jpg")}
+          paragraph={
+            "Loopbaanadviseur Mervyn Nankoe van de Erasmus Universiteit Rotterdam rekent graag af met keuzestress over een studie of vervolgstap."
+          }
+          tags={[{ text: "Nieuws" }]}
+          alt={"Picture of a famous bridge in Rotterdam"}
+          class={"light"}
+          isLightBtn={false}
+          buttonText={"Lees meer"}
+          isFlipped={true}
+          tagClass={".light-green-bg-and-dark-green-text-color"}
+        ></Article>
+
         {/* <div>News</div> */}
+
         {/* <div className={styles.card_section}>
           <Card></Card>
           <Card></Card>
@@ -39,6 +57,27 @@ export default function Home() {
           isLightBtn={true}
           buttonText={"Lees meer"}
         ></Article>
+
+        <Themes
+          header={"Onze thema’s"}
+          text={
+            "AVOHO richt zich op meerdere thema’s binnen het VO en HO onderwijs."
+          }
+          themebuttons={ThemeObjects}
+        ></Themes>
+        <Article
+          header={"Nu beschikbaar: Studeren in het hoger onderwijs 2023"}
+          src={require("../assets/images/article_4_photo.jpg")}
+          alt={"Picture of a person studying"}
+          paragraph={
+            "“Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…”"
+          }
+          class={"light-green"}
+          isLightBtn={false}
+          buttonText={"Bekijk materialen"}
+          tags={[{ text: "Lessenserie" }, { text: "44 materialen" }]}
+          isFlipped={true}
+        ></Article>
         <Article
           header={"Wat kost studeren?"}
           src={require("../assets/images/article_2_photo.jpg")}
@@ -51,13 +90,7 @@ export default function Home() {
           buttonText={"Lees artikel"}
           tags={ArticleTags.ArticleOneTags}
         ></Article>
-        <Themes
-          header={"Onze thema’s"}
-          text={
-            "AVOHO richt zich op meerdere thema’s binnen het VO en HO onderwijs."
-          }
-          themebuttons={ThemeObjects}
-        ></Themes>
+
         {/* <div>Themes</div>
         <div>Materials</div>
         <Article></Article> */}

@@ -1,4 +1,6 @@
-.tag {
+@import "../variables";
+
+.container {
   background: #f4f4f4 0% 0% no-repeat padding-box;
   width: fit-content;
   display: flex;
@@ -10,4 +12,10 @@
   border-radius: 100px;
   color: black;
   font-size: 14px;
+}
+
+.light-green-bg-and-dark-green-text-color {
+  background: $light-green-color;
+  color: $base-green-color;
+  background-color: red;
 }

@@ -3,6 +3,14 @@
 
 .article {
   margin: 0 auto;
+
+  h1 {
+    font-size: 32px;
+  }
+  p {
+    line-height: 1.55rem;
+  }
+
   &_container {
     @include flex-row;
     margin: 0 auto;
@@ -15,7 +23,11 @@
     @include flex-row;
     justify-content: flex-start;
     gap: 1rem;
-    margin-bottom: 1rem;
+    margin: 1rem 0 1rem 0;
+  }
+
+  .flipped {
+    @include flex-row-reverse;
   }
 
   .image {
@@ -31,7 +43,8 @@
   .text {
     @include flex-column;
     justify-content: space-evenly;
-    padding: 1.5rem;
+    padding: 1.2rem;
+    gap: 1rem;
   }
 
   @include responsive(533px) {
@@ -54,7 +67,9 @@
       }
       width: 100%;
       align-self: center;
+
       line-height: 1.55rem;
+
       padding: 2rem;
       min-height: 25rem;
       gap: 1.5rem;
@@ -80,4 +95,13 @@
 .light {
   background: $white-placeholder-color;
   color: black;
+}
+
+.light-green {
+  background: $light-green-color;
+  color: black;
+}
+
+.lightGreen {
+  color: $light-green-color;
 }
