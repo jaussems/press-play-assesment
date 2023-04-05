@@ -19,6 +19,7 @@ export interface IArticle {
   isLightBtn?: boolean;
   tags?: IArrayOfTags;
   isFlipped?: boolean;
+  tagClass?: string;
 }
 
 export interface ITag {

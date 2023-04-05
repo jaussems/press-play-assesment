@@ -20,7 +20,7 @@ const Article: React.FC<any> = (props: IArticle) => {
           <div className={styles.tags}>
             {props.tags && props.tags.length > 0
               ? props.tags.map((tag: ITag, index: number) => (
-                  <div key={index}>
+                  <div key={index} className={`${styles[`${props.tagClass}`]}`}>
                     <Tag text={tag.text}></Tag>
                   </div>
                 ))
