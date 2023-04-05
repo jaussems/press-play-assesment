@@ -71,7 +71,7 @@ export default function Home() {
           paragraph={
             "“Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…”"
           }
-          class={"light"}
+          class={"light-green"}
           isLightBtn={false}
           buttonText={"Bekijk materialen"}
           tags={[{ text: "Lessenserie" }, { text: "44 materialen" }]}

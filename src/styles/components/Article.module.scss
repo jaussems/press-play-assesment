@@ -7,10 +7,10 @@
   h1 {
     font-size: 32px;
   }
+
   &_container {
     @include flex-row;
     margin: 0 auto;
-
     width: 66.25rem;
     height: 21.6875rem;
     border-radius: 8px;
@@ -89,5 +89,10 @@
 
 .light {
   background: $white-placeholder-color;
+  color: black;
+}
+
+.light-green {
+  background-color: $light-green-color;
   color: black;
 }
