@@ -36,6 +36,7 @@ export default function Home() {
           isLightBtn={false}
           buttonText={"Lees meer"}
           isFlipped={true}
+          tagClass={".light-green-bg-and-dark-green-text-color"}
         ></Article>
 
         {/* <div>News</div> */}

@@ -43,7 +43,7 @@
   .text {
     @include flex-column;
     justify-content: space-evenly;
-    padding: 1.5rem;
+    padding: 1.2rem;
     gap: 1rem;
   }
 
@@ -102,11 +102,6 @@
   color: black;
 }
 
-.light-green-text-color {
+.lightGreen {
   color: $light-green-color;
-}
-
-.light-green-bg-and-dark-green-text-color {
-  background: $light-green-color;
-  color: $base-green-color;
 }

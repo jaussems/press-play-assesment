@@ -24,6 +24,7 @@ export interface IArticle {
 
 export interface ITag {
   text: string;
+  class?: string;
 }
 
 export interface IArrayOfTags extends Array<ITag> {}
