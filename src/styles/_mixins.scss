@@ -22,6 +22,11 @@
   flex-wrap: wrap;
 }
 
+@mixin flex-row-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
 @mixin flex-column-reverse {
   display: flex;
   flex-direction: column-reverse;

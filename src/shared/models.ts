@@ -18,6 +18,7 @@ export interface IArticle {
   buttonText: string;
   isLightBtn?: boolean;
   tags?: IArrayOfTags;
+  isFlipped?: boolean;
 }
 
 export interface ITag {

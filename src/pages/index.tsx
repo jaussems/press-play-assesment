@@ -23,6 +23,7 @@ export default function Home() {
         <NavBar></NavBar>
         <Search></Search>
         {/* <div>News</div> */}
+
         {/* <div className={styles.card_section}>
           <Card></Card>
           <Card></Card>
@@ -38,6 +39,7 @@ export default function Home() {
           class={"dark"}
           isLightBtn={true}
           buttonText={"Lees meer"}
+          isFlipped={true}
         ></Article>
         <Article
           header={"Wat kost studeren?"}
