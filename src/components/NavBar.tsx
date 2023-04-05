@@ -45,7 +45,7 @@ const NavBar: React.FC<PropsWithChildren> = (props) => {
       >
         <nav>
           <ul>
-            <li>Thema's</li>
+            <li>Thema &apos;s</li>
             <li>WERKplaats</li>
             <li>Nieuws</li>
             <li>Materialen</li>
