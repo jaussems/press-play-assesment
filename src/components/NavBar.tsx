@@ -4,7 +4,6 @@ import { clsx } from "clsx";
 import Image from "next/image";
 
 const NavBar: React.FC<PropsWithChildren> = (props) => {
-  let shownMenu: boolean = true;
   const [toggle, setToggle] = useState(false);
   function MenuToggle() {
     setToggle(!toggle);
@@ -20,7 +19,7 @@ const NavBar: React.FC<PropsWithChildren> = (props) => {
               alt={"Logo hoge school"}
             />
           </li>
-          <li>Thema's</li>
+          <li>Thema &apos;s</li>
           <li>WERKplaats</li>
           <li>Nieuws</li>
           <li>Materialen</li>
