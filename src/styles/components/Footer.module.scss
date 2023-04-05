@@ -51,7 +51,6 @@
     @include flex-row;
     align-items: center;
     gap: 1.2rem;
-    //background-blend-mode: lighten;
     background-color: #065458;
     border: 0.1rem solid white;
     border-radius: 0.5rem;
@@ -65,7 +64,6 @@
 
   .small_logo {
     border-radius: 2rem;
-    //background-color: white;
     opacity: 0.5;
 
     img {
